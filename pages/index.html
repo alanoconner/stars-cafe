@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Coffee Shop Menu</title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    </head>
+
+
+  <!-- color palette: #402009 , #c4743f  , #605543  , #d7ba98 , #a6c2ce -->
+    <body>
+        <header>
+            <h1>Stars Cafe</h1>
+            <a class="cart-button" href="cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 
+                    .485.621l-1.5 6A.5.5 0 0 1 13 
+                    11H4a.5.5 0 0 1-.485-.379L1.61 
+                    3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 
+                    5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 
+                    0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 
+                    0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 
+                    1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                />
+                </svg>
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">コーヒー</a></li>
+                <li><a href="#">紅茶</a></li>
+                <li><a href="#">その他</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>コーヒー</h2>
+                <div class="scrollable">
+                    <ul>
+                        <li>
+                            <button class="product-button" id="product-button-1">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Regular Coffee</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product-button" id="product-button-2">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Latte</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product-button" id="product-button-3">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Americano</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product-button" id="product-button-4">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Cappuccino</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product-button" id="product-button-5">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header"></h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>紅茶</h2>
+                <div class="scrollable">
+                    <ul>
+                        <li>
+                            <button class="product-button" id="product-button-6">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Black Tea</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product-button" id="product-button-7">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Green Tea</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product-button" id="product-button-8">
+                                <img src="https://via.placeholder.com/150" alt="Coffee">
+                                <div class="button-content">
+                                    <h3 id="pop-up-header">Milk Tea</h3>
+                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                    <p class="price">$2.50</p>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Coffee Shop. All rights reserved.</p>
+        </footer>
+        
+    </body>
+
+    <div class="insert-cart-container" id="insert-cart-container">
+        <div class="insert-cart-content">
+            <h2 id="set-pop-up-header"> </h2>
+            <img src="https://via.placeholder.com/150" alt="Coffee">
+            <p>This is the content of the popup window.</p>
+            <div class="radio-form">
+                <input type="radio" name="select" id="option-1" checked>
+                <input type="radio" name="select" id="option-2">
+                  <label for="option-1" class="option option-1">
+                    <div class="dot"></div>
+                     <span>アイス</span>
+                     </label>
+                  <label for="option-2" class="option option-2">
+                    <div class="dot"></div>
+                     <span>ホット</span>
+                  </label>
+            </div>
+            <div class="radio-form">
+                <input type="radio" name="size" id="size-short" checked>
+                <input type="radio" name="size" id="size-grand">
+                  <label for="size-short" class="option size-short">
+                    <div class="dot"></div>
+                     <span>ショート</span>
+                     </label>
+                  <label for="size-grand" class="option size-grand">
+                    <div class="dot"></div>
+                     <span>グランデ</span>
+                  </label>
+            </div>
+            <div class="button-line">
+                <button id="close-button">Close</button>
+                <button id="add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                        <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 
+                        1h1.11l.401 1.607 1.498 
+                        7.985A.5.5 0 0 0 4 12h1a2 
+                        2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 
+                        2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 
+                        0 0 0 .491-.408l1.5-8A.5.5 0 0 0 
+                        14.5 3H2.89l-.405-1.621A.5.5 0 
+                        0 0 2 1H.5zm3.915 10L3.102 
+                        4h10.796l-1.313 7h-8.17zM6 
+                        14a1 1 0 1 1-2 0 1 1 0 0 1 2 
+                        0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 
+                        2 0z"/>
+                      </svg>
+                </button>
+            </div>
+
+        </div>
+    <script src="../scripts/addToCart.js"></script>
+
+    </div>
+
+    <script src="../scripts/main.js"></script>
+
+</html>

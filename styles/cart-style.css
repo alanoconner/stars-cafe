@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    width: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+header {
+    background-color: #402009;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+  
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #402009;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: auto;
+}
+
+
+
+
+  
+
+
+  
+  
+      
