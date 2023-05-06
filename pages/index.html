@@ -12,7 +12,7 @@
     <body>
         <header>
             <h1>Stars Cafe</h1>
-            <a class="cart-button" href="cart.html">
+            <button id="cart-button" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 
                     .485.621l-1.5 6A.5.5 0 0 1 13 
@@ -24,7 +24,7 @@
                     1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
                 />
                 </svg>
-            </a>
+            </button>
         </header>
         <nav>
             <ul>
@@ -40,51 +40,61 @@
                     <ul>
                         <li>
                             <button class="product-button" id="product-button-1">
-                                <img src="https://via.placeholder.com/150" alt="Coffee">
-                                <div class="button-content">
-                                    <h3 id="pop-up-header">Regular Coffee</h3>
-                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                    <p class="price">$2.50</p>
+                                <div class="item-id" item-id="01">
+                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <div class="button-content">
+                                        <h3 class="pop-up-header">Regular Coffee</h3>
+                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                        <p class="price">250</p>
+                                    </div>
                                 </div>
                             </button>
                         </li>
                         <li>
                             <button class="product-button" id="product-button-2">
-                                <img src="https://via.placeholder.com/150" alt="Coffee">
-                                <div class="button-content">
-                                    <h3 id="pop-up-header">Latte</h3>
-                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                    <p class="price">$2.50</p>
+                                <div class="item-id" item-id="02">
+                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <div class="button-content">
+                                        <h3 class="pop-up-header">Latte</h3>
+                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                        <p class="price">250</p>
+                                    </div>
                                 </div>
                             </button>
                         </li>
                         <li>
                             <button class="product-button" id="product-button-3">
-                                <img src="https://via.placeholder.com/150" alt="Coffee">
-                                <div class="button-content">
-                                    <h3 id="pop-up-header">Americano</h3>
-                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                    <p class="price">$2.50</p>
+                                <div class="item-id" item-id="03">
+                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <div class="button-content">
+                                        <h3 class="pop-up-header">Americano</h3>
+                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                        <p class="price">250</p>
+                                    </div>
                                 </div>
                             </button>
                         </li>
                         <li>
                             <button class="product-button" id="product-button-4">
-                                <img src="https://via.placeholder.com/150" alt="Coffee">
-                                <div class="button-content">
-                                    <h3 id="pop-up-header">Cappuccino</h3>
-                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                    <p class="price">$2.50</p>
+                                <div class="item-id" item-id="04">
+                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <div class="button-content">
+                                        <h3 class="pop-up-header">Cappucino</h3>
+                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                        <p class="price">250</p>
+                                    </div>
                                 </div>
                             </button>
                         </li>
                         <li>
                             <button class="product-button" id="product-button-5">
-                                <img src="https://via.placeholder.com/150" alt="Coffee">
-                                <div class="button-content">
-                                    <h3 id="pop-up-header"></h3>
-                                    <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                    <p class="price">$2.50</p>
+                                <div class="item-id" item-id="05">
+                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <div class="button-content">
+                                        <h3 class="pop-up-header">Espresso</h3>
+                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
+                                        <p class="price">250</p>
+                                    </div>
                                 </div>
                             </button>
                         </li>
@@ -99,7 +109,7 @@
                             <button class="product-button" id="product-button-6">
                                 <img src="https://via.placeholder.com/150" alt="Coffee">
                                 <div class="button-content">
-                                    <h3 id="pop-up-header">Black Tea</h3>
+                                    <h3 class="pop-up-header">Black Tea</h3>
                                     <p class="description">Our signature coffee blend, brewed fresh daily.</p>
                                     <p class="price">$2.50</p>
                                 </div>
@@ -109,7 +119,7 @@
                             <button class="product-button" id="product-button-7">
                                 <img src="https://via.placeholder.com/150" alt="Coffee">
                                 <div class="button-content">
-                                    <h3 id="pop-up-header">Green Tea</h3>
+                                    <h3 class="pop-up-header">Green Tea</h3>
                                     <p class="description">Our signature coffee blend, brewed fresh daily.</p>
                                     <p class="price">$2.50</p>
                                 </div>
@@ -119,7 +129,7 @@
                             <button class="product-button" id="product-button-8">
                                 <img src="https://via.placeholder.com/150" alt="Coffee">
                                 <div class="button-content">
-                                    <h3 id="pop-up-header">Milk Tea</h3>
+                                    <h3 class="pop-up-header">Milk Tea</h3>
                                     <p class="description">Our signature coffee blend, brewed fresh daily.</p>
                                     <p class="price">$2.50</p>
                                 </div>
@@ -136,13 +146,13 @@
     </body>
 
     <div class="insert-cart-container" id="insert-cart-container">
-        <div class="insert-cart-content">
+        <div class="insert-cart-content" item-id=" " price=" ">
             <h2 id="set-pop-up-header"> </h2>
             <img src="https://via.placeholder.com/150" alt="Coffee">
             <p>This is the content of the popup window.</p>
             <div class="radio-form">
-                <input type="radio" name="select" id="option-1" checked>
-                <input type="radio" name="select" id="option-2">
+                <input type="radio" name="select" id="option-1" value = "ice" checked>
+                <input type="radio" name="select" id="option-2" value = "hot">
                   <label for="option-1" class="option option-1">
                     <div class="dot"></div>
                      <span>アイス</span>
@@ -153,8 +163,8 @@
                   </label>
             </div>
             <div class="radio-form">
-                <input type="radio" name="size" id="size-short" checked>
-                <input type="radio" name="size" id="size-grand">
+                <input type="radio" name="size" id="size-short" value = "short" checked>
+                <input type="radio" name="size" id="size-grand" value = "grand">
                   <label for="size-short" class="option size-short">
                     <div class="dot"></div>
                      <span>ショート</span>
@@ -163,6 +173,15 @@
                     <div class="dot"></div>
                      <span>グランデ</span>
                   </label>
+            </div>
+            <div class="quantity">
+
+                <button class="decrement-btn" onclick="decrement()">-</button>
+
+                <!-- <label for="quantity">Quantity:</label> -->
+                <input type="number" id="quantity" name="quantity" value="0">
+                <button class="increment-btn" onclick="increment()">+</button>
+
             </div>
             <div class="button-line">
                 <button id="close-button">Close</button>
@@ -186,10 +205,10 @@
             </div>
 
         </div>
-    <script src="../scripts/addToCart.js"></script>
+    <!-- <script src="../scripts/addToCart.js"></script> -->
 
     </div>
-
-    <script src="../scripts/main.js"></script>
+    <!-- <script src="../scripts/addToCart.js"></script> -->
+    <script lang="js" src="../scripts/main.js"></script>
 
 </html>

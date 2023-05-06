@@ -107,6 +107,8 @@ li{
     width: 250px;
     border: none;
 }
+
+
   
 .product-button img {
     width: 100%;
@@ -114,8 +116,18 @@ li{
     border-radius: 10px 10px 0 0;
 }
   
-.product-button div {
+/* .product-button div {
     padding: 10px;
+} */
+.item-id{
+    margin:0;
+    padding:0;
+    
+}
+
+.button-content{
+    padding: 10px;
+
 }
   
 h3 {
@@ -173,8 +185,8 @@ footer {
     padding: 5px;
     max-width: 28em;
     min-width: 21em;
-    max-height: 75%;
-    min-height: 69%;
+    max-height: 38em;
+    min-height: 28em;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -186,6 +198,7 @@ footer {
     align-items: center;
     flex-direction: column;
 }
+
 
 #set-pop-up-header{
     padding-top:0.5em;
@@ -241,6 +254,45 @@ footer {
     font-weight: bold;
     
 }
+
+.quantity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 30%; */
+    
+}
+
+input[type=number] {
+    width: 40px;
+    height: 40px;
+    margin: 0.2em 0.2em;
+    text-align: center;
+    border-radius: 10%;
+    font-size: 30px;
+
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.increment-btn{
+    width: 3.8em;
+    height: 3.8em;
+}
+
+.decrement-btn{
+    width: 3.8em;
+    height: 3.8em;
+}
+
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+  
 
 
 /*///////////RADIO/////////*/

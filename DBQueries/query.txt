@@ -1,0 +1,26 @@
+//////////////////////////////////      DB
+create database starsCafe;
+
+
+
+//////////////////////////////////      ORDERLIST
+create table orderList (Id int,
+OrderId varchar(20),
+ItemName varchar(20), 
+Temp varchar(20), 
+Size varchar(20), 
+Quantity int,
+TotalPrice int,
+Price int,
+Place varchar(20),
+OrderTime Time
+);
+
+/////////////////////////////////  TRUNCATE
+
+truncate orderList;
+
+
+/////////////////////////////////  DELETE TABLE
+
+drop table orderList;
