@@ -7,6 +7,18 @@ let _itemId;
 let coffeeName;
 let _price;
 
+
+// Fetch items from DB
+
+
+
+
+
+
+
+//
+
+
 for (let i = 0; i < productButtons.length; i++) {
   productButtons[i].addEventListener("click", function() {
 
