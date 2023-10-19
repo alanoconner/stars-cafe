@@ -12,7 +12,7 @@ const cancelBtn = document.getElementById('cancel-button');
 
 //Return if number of items == 0
 if(cartItems.length===0){
-    window.location.href= 'http://localhost:63342/stars-cafe/pages/index.html';
+    window.location.href= 'http://localhost:5500/stars-cafe/pages/index.html';
 }
 //
 
@@ -125,7 +125,7 @@ orderBtn.addEventListener("click", function(){
 
         localStorage.clear();
         alert("注文受け取りました、注文番号："+orderId);
-        window.location.href= 'http://localhost:63342/stars-cafe/pages/index.html';
+        window.location.href= 'http://localhost:5500/stars-cafe/pages/index.html';
 
     }else{
         alert("受け取り方法を選択してください");
