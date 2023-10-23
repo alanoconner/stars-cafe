@@ -47,7 +47,6 @@ main {
 
 #items{
     
-    border:solid 1px red;
     width: 35em;
 
     white-space: nowrap;
@@ -69,15 +68,24 @@ main {
 .item-content{
     display: flex;
     justify-content: space-between;
-    border: solid 1px green;
+    border: solid 2px #956746;
+    background-color: #f4f4f4;
     border-radius: 10px;
     width: 25em;
+
+    padding-right: 1em;
     
 }
 
 .delete-button{
     width: 8em;
     border-radius: 10px;
+    margin-left: 1em;
+    border: 1px solid #e94e4e;
+    background-color: #f4f4f4;
+    color: #e94e4e;
+    border-radius: 16px;
+    
 }
 
 .item-info{
@@ -105,6 +113,7 @@ main {
 
 
 #button-line{
+    margin-top: 1em;
     width: 31em;
     display: flex;
     justify-content: space-between;
@@ -113,10 +122,17 @@ main {
 #order-button{
     width: 15.5em;
     height: 4em;
+    border-radius: 15px;
+    border: 1px solid #0C4009;
+    color:#0C4009;
 }
 
 #cancel-button{
     width: 15.5em;
+    border-radius: 15px;
+    border: 1px solid #e94e4e;
+    color: #e94e4e
+
 }
 
 footer {
@@ -126,6 +142,23 @@ footer {
     padding: 20px;
     bottom: 0;
     width: auto;
+}
+
+.return-button {
+    height: 2em;
+    width: 4em;
+    background-color: transparent; 
+    color: #fff; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 1px;
+    cursor: pointer; 
+    padding-top: 0.5em;
+  }
+  
+
+.order-place {
+    margin: 1em;
 }
 
 

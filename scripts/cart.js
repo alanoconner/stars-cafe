@@ -12,7 +12,7 @@ const cancelBtn = document.getElementById('cancel-button');
 
 //Return if number of items == 0
 if(cartItems.length===0){
-    window.location.href= 'http://localhost:5500/stars-cafe/pages/index.html';
+    window.location.href= 'http://127.0.0.1:5500/pages/index.html';
 }
 //
 
@@ -31,13 +31,13 @@ cartItems.forEach(item => {
     <img src = "../components/coffee-icon.svg">
     <div class = "item-info">
         <h3>${item.name}</h3>
-        <p>Temp: ${item.temp}</p>
-        <p>Size: ${item.size}</p>
-        <p>Quantity: ${item.quantity}</p>
-        <p>Price: ${item.price}</p>
+        <p>てんぷ: ${item.temp}</p>
+        <p>サイズ: ${item.size}</p>
+        <p>数量: ${item.quantity}</p>
+        <p>小計: ${item.price}</p>
     </div>
     </div>
-    <button class="delete-button" id="delete-button-${delBtnId}">d</button>`;
+    <button class="delete-button" id="delete-button-${delBtnId}">削除</button>`;
     delBtnId++;
     cartItemsElement.appendChild(itemElement);
 });
@@ -50,8 +50,8 @@ let totalElement = document.createElement("div");
 totalElement.classList.add("total");
 
 totalElement.innerHTML = `
-                    <h2>Total:&nbsp; </h2>
-                    <h2>&nbsp; ${totalPrice}</h2>`
+                    <h2>合計:&nbsp; </h2>
+                    <h2>&nbsp; ${totalPrice}　円</h2>`
 
 cartTotalElement.appendChild(totalElement);
 
@@ -62,10 +62,10 @@ cartTotalElement.appendChild(totalElement);
 const orderPlace = document.createElement("div");
 orderPlace.classList.add("order-place");
 orderPlace.innerHTML=`
-                <label for="place-select">Choose a place:</label>
+                <label for="place-select">受け取りオプション選択:</label>
 
                 <select name="places" id="place-select" required>
-                    <option value="none">--Please choose an option--</option>
+                    <option value="none">選択してください</option>
                     <option value="takeout">Take Out</option>
                     <option value="Cafeteria">Cafeteria</option>
 
@@ -125,9 +125,9 @@ orderBtn.addEventListener("click", function(){
 
         localStorage.clear();
         alert("注文受け取りました、注文番号："+orderId);
-        window.location.href= 'http://localhost:5500/stars-cafe/pages/index.html';
+        window.location.href= 'http://localhost:5500/pages/index.html';
 
-    }else{
+    } else {
         alert("受け取り方法を選択してください");
     }
 
@@ -135,7 +135,7 @@ orderBtn.addEventListener("click", function(){
 
 cancelBtn.addEventListener("click", function(){
     localStorage.clear();
-    window.location.href= 'http://localhost:63342/stars-cafe/pages/index.html';
+    window.location.href= 'http://127.0.0.1:5500/pages/index.html';
 })
 
 

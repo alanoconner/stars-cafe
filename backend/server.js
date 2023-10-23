@@ -40,6 +40,24 @@ app.post('/set-order', (req, res) => {
     });
 });
 
+app.get('/get-order', (req, res) => {
+
+    const sql="select * from items";
+
+
+    connection.query(sql, (error, results) => {
+        if (error) {
+            throw error;
+        }
+
+        // Send the retrieved data as a response
+        res.json(results);
+    });
+
+});
+
+
+
 
 
 // start the server
