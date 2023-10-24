@@ -12,7 +12,7 @@ const cancelBtn = document.getElementById('cancel-button');
 
 //Return if number of items == 0
 if(cartItems.length===0){
-    window.location.href= 'http://127.0.0.1:5500/pages/index.html';
+    window.location.href= 'http://3.112.118.227/stars-cafe/pages/index.html';
 }
 //
 
@@ -112,7 +112,7 @@ orderBtn.addEventListener("click", function(){
     if(place!=='none'){
         cartItems.forEach(item => {
 
-            fetch('http://localhost:3000/set-order', {
+            fetch('http://3.112.118.227:3000/set-order', {
                 method:'POST',
                 headers:{ 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: `Id=${encodeURIComponent(parseInt(item.id))}&OrderId=${orderId}&ItemName=${item.name}&Temp=${item.temp}&Size=${item.size}&Quantity=${item.quantity}&TotalPrice=${totalPrice}&Price=${parseInt(item.price)}&Place=${place}`
@@ -125,7 +125,7 @@ orderBtn.addEventListener("click", function(){
 
         localStorage.clear();
         alert("注文受け取りました、注文番号："+orderId);
-        window.location.href= 'http://localhost:5500/pages/index.html';
+        window.location.href= 'http://3.112.118.227/stars-cafe/pages/index.html';
 
     } else {
         alert("受け取り方法を選択してください");
@@ -135,7 +135,7 @@ orderBtn.addEventListener("click", function(){
 
 cancelBtn.addEventListener("click", function(){
     localStorage.clear();
-    window.location.href= 'http://127.0.0.1:5500/pages/index.html';
+    window.location.href= 'http://3.112.118.227/stars-cafe/pages/index.html';
 })
 
 
