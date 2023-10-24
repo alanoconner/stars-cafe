@@ -25,10 +25,13 @@ header {
     justify-content: space-between;
 }
 
-.cart-button{
+#cart-button{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    background-color: #402009;
+    border: none;
 }
   
 nav {
