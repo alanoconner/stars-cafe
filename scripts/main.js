@@ -98,5 +98,17 @@ cartButton.addEventListener('click', function (){
 })
 
 
+// Function to update the cart counter
+function updateCartCounter() {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const itemCounter = document.querySelector('.item-counter');
+  itemCounter.textContent = cart.length;
+}
+
+// Call the function to update the counter when the page loads
+updateCartCounter();
+
+
+
 
 
