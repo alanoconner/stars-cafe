@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-    
 }
 
 html {
@@ -40,14 +39,15 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+    width: 89vw;
+    margin: auto;
     align-items: center;
-    
+        
 }
 
 #items{
     
-    width: 35em;
+    width: 100%;
 
     white-space: nowrap;
     overflow-x: auto;
@@ -114,21 +114,21 @@ main {
 
 #button-line{
     margin-top: 1em;
-    width: 31em;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 #order-button{
-    width: 15.5em;
+    width: 30%;
     height: 4em;
     border-radius: 15px;
-    border: 1px solid #0C4009;
-    color:#0C4009;
+    border: 1px solid green;
+    color:green;
 }
 
 #cancel-button{
-    width: 15.5em;
+    width: 30%;
     border-radius: 15px;
     border: 1px solid #e94e4e;
     color: #e94e4e
