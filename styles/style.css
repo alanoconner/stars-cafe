@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Santana-BlackCondensed';
+    src: url('../components/Santana-Black.woff') format('woff2'),
+        url('../components/Santana-Black.woff2') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     margin:0;
     padding:0;
@@ -25,13 +34,30 @@ header {
     justify-content: space-between;
 }
 
+header h1 {
+    font-family: 'Santana-BlackCondensed', sans-serif;
+}
+
 #cart-button{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     background-color: #402009;
-    border: none;
+    border:none;
+    position: relative;
+}
+
+.item-counter {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    background-color: #fff;
+    border: 1px solid #402009;
+    color: #402009;
+    border-radius: 50%;
+    padding: 1px 4px;
+    font-size: 10px;
 }
   
 nav {
@@ -236,9 +262,8 @@ footer {
     width: 100%;
     height: 3em;
     background-color: white;
-    color: green;
-    border-color:green;
-    
+    border: 2px solid green;   
+    color:green;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -250,7 +275,7 @@ footer {
     height: 3em;
     background-color: white;
     color: red;
-    border-color:red;
+    border: 2px solid red;
     margin-right: 1em;
     border-radius: 5px;
     text-decoration: none;
@@ -271,7 +296,8 @@ input[type=number] {
     height: 40px;
     margin: 0.2em 0.2em;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 15%;
+    border: 1px solid black;
     font-size: 30px;
 
 }
@@ -284,11 +310,18 @@ input[type=number]::-webkit-inner-spin-button {
 .increment-btn{
     width: 3.8em;
     height: 3.8em;
+    border: 1px solid #402009;
+    border-radius: 20%;
+    background-color: white;
+
 }
 
 .decrement-btn{
     width: 3.8em;
     height: 3.8em;
+    border: 1px solid #402009;
+    border-radius: 20%;
+    background-color: white;
 }
 
 /* input[type=number] {

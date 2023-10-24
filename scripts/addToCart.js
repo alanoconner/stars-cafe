@@ -71,6 +71,7 @@ addToCartBtn.addEventListener("click", function(){
         }
         // store updated cart in local storage
         localStorage.setItem("cart", JSON.stringify(cart));
+        window.location.reload();
 
     }else{
         alert("Storage full, reload the website");
