@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'GG!JSIfRZ3jW',
+    password: 'alnukod1993',
     database: 'starsCafe'
 });
 
@@ -40,9 +40,9 @@ app.post('/set-order', (req, res) => {
     });
 });
 
-app.get('/get-order', (req, res) => {
+app.get('/get-orders', (req, res) => {
 
-    const sql="select * from items";
+    const sql="select * from orderList;";
 
 
     connection.query(sql, (error, results) => {
@@ -50,10 +50,27 @@ app.get('/get-order', (req, res) => {
             throw error;
         }
 
-        // Send the retrieved data as a response
         res.json(results);
     });
 
+});
+
+
+app.delete('/delete-order/:Id/:time', (req, res) => {
+    const Id = req.params.Id;
+    const time = req.params.time;
+
+    const sql = `delete from orderList where Id=${Id} and OrderTime="${time}";`
+
+    connection.query(sql, (err, results) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('Error marking order as completed');
+        } else {
+            res.status(200).send('Order marked as completed');
+        }
+        
+    });
 });
 
 
@@ -61,7 +78,7 @@ app.get('/get-order', (req, res) => {
 
 
 // start the server
-app.listen(3000,'0.0.0.0', () => {
+app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
 

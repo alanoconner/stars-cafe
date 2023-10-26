@@ -93,7 +93,7 @@ quantityInput.addEventListener('change', function() {
 cartButton.addEventListener('click', function (){
 
   if (localStorage.getItem("cart")){
-    window.location.href = "http://starscafe.store/stars-cafe/pages/cart.html";
+    window.location.href = "127.0.0.1:5500/stars-cafe/pages/cart.html";
   }
 })
 
