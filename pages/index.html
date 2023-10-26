@@ -40,17 +40,17 @@
         </nav>
         <main>
             <section id="coffee-section">
-                <h2>コーヒー</h2>
+                <h2>ドリップコーヒー</h2>
                 <div class="scrollable">
                  <ul  id="coffee-corner">
                         <li>
                             <button class="product-button" id="product-button-1">
                                 <div class="item-id" item-id="01">
-                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <img src="/components/vietnam.jpg" alt="Coffee">
                                     <div class="button-content">
-                                        <h3 class="pop-up-header">Regular Coffee</h3>
-                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                        <p class="price">250</p>
+                                        <h3 class="pop-up-header">ベトナム　ロブスタ</h3>
+                                        <p class="description">苦みとコクの強いベトナムの</br>ロブスタを100%利用しています！</p>
+                                        <p class="price">300円</p>
                                     </div>
                                 </div>
                             </button>
@@ -58,16 +58,16 @@
                         <li>
                             <button class="product-button" id="product-button-2">
                                 <div class="item-id" item-id="02">
-                                    <img src="https://via.placeholder.com/150" alt="Coffee">
+                                    <img src="/components/brazil.jpg" alt="Coffee">
                                     <div class="button-content">
-                                        <h3 class="pop-up-header">Latte</h3>
-                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                        <p class="price">250</p>
+                                        <h3 class="pop-up-header">ブラジル No2</h3>
+                                        <p class="description">ブラジルの欠点豆（雑味の原因）が</br>一番少ない柔らかい美味しさの</br>初心者にもオススメのコーヒーです！</p>
+                                        <p class="price">300円</p>
                                     </div>
                                 </div>
                             </button>
                         </li>
-                        <li>
+                       <!-- <li>
                             <button class="product-button" id="product-button-3">
                                 <div class="item-id" item-id="03">
                                     <img src="https://via.placeholder.com/150" alt="Coffee">
@@ -102,7 +102,7 @@
                                     </div>
                                 </div>
                             </button>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </section>
@@ -113,16 +113,16 @@
                         <li>
                             <button class="product-button" id="product-button-6">
                                 <div class="item-id" item-id="06">
-                                    <img src="https://via.placeholder.com/150" alt="Tea">
+                                    <img src="/components/earl_grey.jpg" alt="Tea">
                                     <div class="button-content">
-                                        <h3 class="pop-up-header">Black Tea</h3>
-                                        <p class="description">Our signature coffee blend, brewed fresh daily.</p>
-                                        <p class="price">250</p>
+                                        <h3 class="pop-up-header">アールグレイ</h3>
+                                        <p class="description">香り高い紅茶で、ベルガモットの</br>香りが特徴です。リラックスした</br>ひとときを楽しめます。</p>
+                                        <p class="price">300円</p>
                                     </div>
                                 </div>
                             </button>
                         </li>
-                        <li>
+                        <!--<li>
                             <button class="product-button" id="product-button-7">
                                 <div class="item-id" item-id="07">
                                     <img src="https://via.placeholder.com/150" alt="Tea">
@@ -145,7 +145,7 @@
                                     </div>
                                 </div>
                             </button>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </section>
@@ -159,11 +159,11 @@
     <div class="insert-cart-container" id="insert-cart-container">
         <div class="insert-cart-content" item-id=" " price=" ">
             <h2 id="set-pop-up-header"> </h2>
-            <img src="https://via.placeholder.com/150" alt="Coffee">
-            <p>This is the content of the popup window.</p>
+            <img src=" " alt="Coffee">
+            <p>現在コーヒーの選択肢が限られています。</br>**映像と実物がことなります。**</p>
             <div class="radio-form">
-                <input type="radio" name="select" id="option-1" value = "ice" checked>
-                <input type="radio" name="select" id="option-2" value = "hot">
+                <input type="radio" name="select" id="option-1" value = "ice" disabled>
+                <input type="radio" name="select" id="option-2" value = "hot" checked>
                   <label for="option-1" class="option option-1">
                     <div class="dot"></div>
                      <span>アイス</span>
@@ -174,15 +174,15 @@
                   </label>
             </div>
             <div class="radio-form">
-                <input type="radio" name="size" id="size-short" value = "short" checked>
-                <input type="radio" name="size" id="size-grand" value = "grand">
+                <input type="radio" name="size" id="size-short" value = "short" disabled>
+                <input type="radio" name="size" id="size-grand" value = "grand" checked>
                   <label for="size-short" class="option size-short">
                     <div class="dot"></div>
                      <span>ショート</span>
                      </label>
                   <label for="size-grand" class="option size-grand">
                     <div class="dot"></div>
-                     <span>グランデ</span>
+                     <span>トール</span>
                   </label>
             </div>
             <div class="quantity">

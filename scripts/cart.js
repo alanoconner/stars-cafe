@@ -31,7 +31,7 @@ cartItems.forEach(item => {
     <img src = "../components/coffee-icon.svg">
     <div class = "item-info">
         <h3>${item.name}</h3>
-        <p>てんぷ: ${item.temp}</p>
+        <p>温度: ${item.temp}</p>
         <p>サイズ: ${item.size}</p>
         <p>数量: ${item.quantity}</p>
         <p>小計: ${item.price}</p>
@@ -45,7 +45,7 @@ cartItems.forEach(item => {
 
 
 // calculate total price and update cart total element
-const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+const totalPrice = cartItems.reduce((total, item) => total + (parseInt(item.price) * parseInt(item.quantity)), 0);
 let totalElement = document.createElement("div");
 totalElement.classList.add("total");
 
@@ -61,13 +61,23 @@ cartTotalElement.appendChild(totalElement);
 
 const orderPlace = document.createElement("div");
 orderPlace.classList.add("order-place");
+// orderPlace.innerHTML=`
+//                 <label for="place-select">受け取りオプション選択:</label>
+
+//                 <select name="places" id="place-select" required>
+//                     <option value="none">選択してください</option>
+//                     <option value="takeout">Take Out</option>
+//                     <option value="Cafeteria">Cafeteria</option>
+
+//                 </select>`   ;
+
 orderPlace.innerHTML=`
                 <label for="place-select">受け取りオプション選択:</label>
 
                 <select name="places" id="place-select" required>
-                    <option value="none">選択してください</option>
+                    
                     <option value="takeout">Take Out</option>
-                    <option value="Cafeteria">Cafeteria</option>
+                    
 
                 </select>`   ;
 

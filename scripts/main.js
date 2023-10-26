@@ -51,10 +51,13 @@ for (let i = 0; i < productButtons.length; i++) {
     console.log(_itemId);
 
     _price = productButtons[i].querySelector(".price").textContent;
+
+    _img = productButtons[i].querySelector("img").getAttribute("src")
     
     popupContainer.querySelector("#set-pop-up-header").innerHTML = coffeeName;
     popupContainer.querySelector(".insert-cart-content").setAttribute('item-id',_itemId);
     popupContainer.querySelector(".insert-cart-content").setAttribute('price', _price);
+    popupContainer.querySelector("img").setAttribute('src', _img);
 
     var script = document.createElement("script");
     script.src = "../scripts/addToCart.js";

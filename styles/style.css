@@ -171,6 +171,7 @@ p {
 .description{
     font-size: 1em;
     width: 250px;
+    height: 5em;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -214,7 +215,7 @@ footer {
     padding: 5px;
     max-width: 28em;
     min-width: 21em;
-    max-height: 38em;
+    max-height: 42em;
     min-height: 28em;
     position: absolute;
     top: 45%;
